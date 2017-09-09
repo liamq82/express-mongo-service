@@ -1,0 +1,25 @@
+{
+  "name": "express-mongo-service",
+  "version": "1.0.0",
+  "description": "node express mongodb service",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liamq82/express-mongo-service.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liamq82/express-mongo-service/issues"
+  },
+  "homepage": "https://github.com/liamq82/express-mongo-service#readme",
+  "dependencies": {
+    "express": "^4.15.4",
+    "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.2.1",
+    "mongoose": "^4.11.10"
+  }
+}

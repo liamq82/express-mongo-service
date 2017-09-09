@@ -1,0 +1,7 @@
+db.customers.insert([
+{
+  name: 'liam quinlan',
+  address: '2 newpark lodge',
+  accountNumber: 12345
+}
+])
