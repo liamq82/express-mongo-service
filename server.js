@@ -16,16 +16,9 @@ app.use(bodyParser.json());
 
 var router = express.Router();
 
+var customerController = require('./controllers/customerController')(Customer);
 router.route('/customers')
-    .get(function(req, res){
-        Customer.find(function(err, customers){
-            if(err){
-                res.status(500).send(err);
-            }else {
-                res.json(customers);
-            }
-        });
-    });
+    .get(customerController.get);
 app.use('/api', router);
 
 app.listen(port, function(){
