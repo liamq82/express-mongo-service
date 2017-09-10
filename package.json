@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/liamq82/express-mongo-service#readme",
   "dependencies": {
+    "body-parser": "^1.18.0",
     "express": "^4.15.4",
     "gulp": "^3.9.1",
     "gulp-nodemon": "^2.2.1",
