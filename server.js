@@ -14,11 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(bodyParser.json());
 
-var router = express.Router();
-
-var customerController = require('./controllers/customerController')(Customer);
-router.route('/customers')
-    .get(customerController.get);
+var router = require('./routes/customerRouter')(Customer);
 app.use('/api', router);
 
 app.listen(port, function(){
