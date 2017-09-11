@@ -5,7 +5,8 @@ var customerRoutes = function (Customer) {
 
     var router = express.Router();
     router.route('/customers')
-        .get(customerController.get);
+        .get(customerController.get)
+        .post(customerController.post);
 
     return router;
 };
