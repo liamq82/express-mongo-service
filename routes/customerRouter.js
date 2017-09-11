@@ -1,13 +1,13 @@
 var express = require('express');
 
-var routes = function (Customer) {
-    var router = express.Router();
-
+var customerRoutes = function (Customer) {
     var customerController = require('../controllers/customerController')(Customer);
+
+    var router = express.Router();
     router.route('/customers')
         .get(customerController.get);
 
     return router;
 };
 
-module.exports = routes;
+module.exports = customerRoutes;
